@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 17, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
-    {"offset": {"line": 21, "column": 0}, "map": {"version":3,"sources":["file:///Users/aref.ashrafi/dev/personal/wedding-rsvp/app/page.tsx"],"sourcesContent":["import Image from \"next/image\";\nimport Navbar from \"./components/Navbar\";\n\nexport default function Home() {\n  return (\n    <>\n      <Navbar />\n      <div className=\"flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black pt-16\">\n        \n      </div>\n    </>\n  );\n}\n"],"names":[],"mappings":";;;;;AACA;;;AAEe,SAAS;IACtB,qBACE;;0BACE,8OAAC,uIAAM;;;;;0BACP,8OAAC;gBAAI,WAAU;;;;;;;;AAKrB"}}]
-}

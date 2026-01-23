@@ -1,13 +1,13 @@
 "use client";
 import RSVPForm from "./components/RSVPForm";
 import ContactSection from "./components/ContactSection";
+import { AuroraBackground } from "./components/ui/aurora-background";
 import { motion } from "motion/react";
 
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
-      <div className="min-h-screen flex items-center justify-center">
+      <AuroraBackground>
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -16,8 +16,9 @@ export default function Home() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="text-center space-y-8 px-4"
-        >
+          className="relative flex flex-col gap-4 items-center justify-center px-4"
+        />
+        <div className="relative z-10 text-center space-y-8 px-4">
           <h1 className="text-6xl md:text-8xl font-bold text-gray-900">
             Sueun & Aref
           </h1>
@@ -30,8 +31,8 @@ export default function Home() {
           >
             RSVP Now
           </a>
-        </motion.div>
-      </div>
+        </div>
+      </AuroraBackground>
       <RSVPForm />
       <ContactSection />
     </>
