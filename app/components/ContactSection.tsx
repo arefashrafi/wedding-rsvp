@@ -99,59 +99,6 @@ export default function ContactSection() {
           ))}
         </div>
 
-        {/* Quick message section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="bg-gray-50 rounded-2xl p-8 shadow-lg border border-gray-100"
-        >
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Send Us a Message</h3>
-          <form className="space-y-4">
-            <div className="grid md:grid-cols-2 gap-4">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-all bg-white"
-                  placeholder="John Doe"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Your Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-all bg-white"
-                  placeholder="john@example.com"
-                />
-              </div>
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                Message
-              </label>
-              <textarea
-                id="message"
-                rows={5}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-all resize-none bg-white"
-                placeholder="Your message here..."
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-gray-900 text-white py-4 px-8 rounded-lg font-semibold text-lg hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              Send Message
-            </button>
-          </form>
-        </motion.div>
       </div>
     </div>
   );
