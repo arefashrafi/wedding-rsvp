@@ -1,0 +1,1071 @@
+[00:00:00.792] Server  LOG      ✓ Ready in 536ms
+[00:00:01.967] Server  ERROR    ⨯ ./app/layout.tsx:22:14
+Ecmascript file had an error
+  20 | });
+  21 |
+> 22 | export const metadata: Metadata = {
+     |              ^^^^^^^^
+  23 |   title: "RSVP Sueun & Aref",
+  24 |   description: "RSVP for the wedding of Sueun & Aref",
+  25 | };
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:01.968] Server  WARN     ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:01.969] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:01.969] Server  WARN     ⚠ [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component Browser]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component SSR]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:01.969] Server  WARN     ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:01.969] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:01.969] Server  WARN     ⚠ [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+next/font: warning:
+Failed to download `JetBrains Mono` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component Browser]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component SSR]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:02.437] Server  WARN     ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:02.437] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:02.437] Server  WARN     ⚠ [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component Browser]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component SSR]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:02.437] Server  WARN     ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:02.437] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:02.437] Server  WARN     ⚠ [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+next/font: warning:
+Failed to download `JetBrains Mono` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component Browser]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component SSR]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:02.438] Browser ERROR   uncaughtError: Error: ./app/layout.tsx:22:14
+Ecmascript file had an error
+  20 | });
+  21 |
+> 22 | export const metadata: Metadata = {
+     |              ^^^^^^^^
+  23 |   title: "RSVP Sueun & Aref",
+  24 |   description: "RSVP for the wedding of Sueun & Aref",
+  25 | };
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:02.582] Browser ERROR   ./app/layout.tsx:22:14
+Ecmascript file had an error
+  20 | });
+  21 |
+> 22 | export const metadata: Metadata = {
+     |              ^^^^^^^^
+  23 |   title: "RSVP Sueun & Aref",
+  24 |   description: "RSVP for the wedding of Sueun & Aref",
+  25 | };
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+[00:00:02.582] Browser ERROR   ./app/layout.tsx:22:14
+Ecmascript file had an error
+  20 | });
+  21 |
+> 22 | export const metadata: Metadata = {
+     |              ^^^^^^^^
+  23 |   title: "RSVP Sueun & Aref",
+  24 |   description: "RSVP for the wedding of Sueun & Aref",
+  25 | };
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+[00:00:08.922] Server  ERROR    ⨯ ./app/layout.tsx:22:14
+Ecmascript file had an error
+  20 | });
+  21 |
+> 22 | export const metadata: Metadata = {
+     |              ^^^^^^^^
+  23 |   title: "RSVP Sueun & Aref",
+  24 |   description: "RSVP for the wedding of Sueun & Aref",
+  25 | };
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:08.923] Server  WARN     ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:08.923] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:08.924] Server  WARN     ⚠ [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component Browser]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component SSR]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:08.924] Server  WARN     ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:08.924] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:08.924] Server  WARN     ⚠ [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+next/font: warning:
+Failed to download `JetBrains Mono` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component Browser]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component SSR]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:08.991] Server  WARN     ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:08.991] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:08.991] Server  WARN     ⚠ [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component Browser]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component SSR]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:08.991] Server  WARN     ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:08.991] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:08.991] Server  WARN     ⚠ [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+next/font: warning:
+Failed to download `JetBrains Mono` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component Browser]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component SSR]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:08.992] Browser ERROR   uncaughtError: Error: ./app/layout.tsx:22:14
+Ecmascript file had an error
+  20 | });
+  21 |
+> 22 | export const metadata: Metadata = {
+     |              ^^^^^^^^
+  23 |   title: "RSVP Sueun & Aref",
+  24 |   description: "RSVP for the wedding of Sueun & Aref",
+  25 | };
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:09.127] Browser ERROR   ./app/layout.tsx:22:14
+Ecmascript file had an error
+  20 | });
+  21 |
+> 22 | export const metadata: Metadata = {
+     |              ^^^^^^^^
+  23 |   title: "RSVP Sueun & Aref",
+  24 |   description: "RSVP for the wedding of Sueun & Aref",
+  25 | };
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+[00:00:09.127] Browser ERROR   ./app/layout.tsx:22:14
+Ecmascript file had an error
+  20 | });
+  21 |
+> 22 | export const metadata: Metadata = {
+     |              ^^^^^^^^
+  23 |   title: "RSVP Sueun & Aref",
+  24 |   description: "RSVP for the wedding of Sueun & Aref",
+  25 | };
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+[00:00:10.167] Server  ERROR    ⨯ ./app/layout.tsx:22:14
+Ecmascript file had an error
+  20 | });
+  21 |
+> 22 | export const metadata: Metadata = {
+     |              ^^^^^^^^
+  23 |   title: "RSVP Sueun & Aref",
+  24 |   description: "RSVP for the wedding of Sueun & Aref",
+  25 | };
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:10.168] Server  WARN     ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:10.168] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:10.168] Server  WARN     ⚠ [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component Browser]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component SSR]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:10.168] Server  WARN     ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:10.168] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:10.168] Server  WARN     ⚠ [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+next/font: warning:
+Failed to download `JetBrains Mono` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component Browser]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component SSR]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:10.225] Server  WARN     ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:10.226] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:10.226] Server  WARN     ⚠ [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component Browser]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component SSR]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:10.226] Server  WARN     ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_a71539c9.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_a71539c9.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:10.226] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component Browser]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css [Client Component SSR]
+    [next]/internal/font/google/geist_mono_8d43a2aa.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:10.226] Server  WARN     ⚠ [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+next/font: warning:
+Failed to download `JetBrains Mono` from Google Fonts. Using fallback font instead.
+
+Import traces:
+  Client Component Browser:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component Browser]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component Browser]
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css [Client Component SSR]
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js [Client Component SSR]
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:10.226] Browser ERROR   uncaughtError: Error: ./app/layout.tsx:22:14
+Ecmascript file had an error
+  20 | });
+  21 |
+> 22 | export const metadata: Metadata = {
+     |              ^^^^^^^^
+  23 |   title: "RSVP Sueun & Aref",
+  24 |   description: "RSVP for the wedding of Sueun & Aref",
+  25 | };
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:10.361] Browser ERROR   ./app/layout.tsx:22:14
+Ecmascript file had an error
+  20 | });
+  21 |
+> 22 | export const metadata: Metadata = {
+     |              ^^^^^^^^
+  23 |   title: "RSVP Sueun & Aref",
+  24 |   description: "RSVP for the wedding of Sueun & Aref",
+  25 | };
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+[00:00:10.361] Browser ERROR   ./app/layout.tsx:22:14
+Ecmascript file had an error
+  20 | });
+  21 |
+> 22 | export const metadata: Metadata = {
+     |              ^^^^^^^^
+  23 |   title: "RSVP Sueun & Aref",
+  24 |   description: "RSVP for the wedding of Sueun & Aref",
+  25 | };
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./app/layout.tsx [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/layout.tsx [Client Component SSR]
+    ./app/layout.tsx [Server Component]
+[00:00:17.948] Server  LOG      ✓ Compiled in 32ms
+[00:00:17.967] Server  WARN     ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+[00:00:17.967] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+    [next]/internal/font/google/geist_mono_8d43a2aa.js
+    ./app/layout.tsx
+
+
+[00:00:17.967] Server  WARN     ⚠ [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js
+    ./app/layout.tsx
+
+
+[00:00:17.967] Server  WARN     ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+[00:00:17.967] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+    [next]/internal/font/google/geist_mono_8d43a2aa.js
+    ./app/layout.tsx
+
+
+[00:00:17.967] Server  WARN     ⚠ [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+next/font: warning:
+Failed to download `JetBrains Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js
+    ./app/layout.tsx
+
+
+[00:00:18.158] Server  WARN     ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+[00:00:18.159] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+    [next]/internal/font/google/geist_mono_8d43a2aa.js
+    ./app/layout.tsx
+
+
+[00:00:18.159] Server  WARN     ⚠ [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+Error while requesting resource
+There was an issue establishing a connection while requesting https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap
+Hint: It looks like this error was TLS-related. Try enabling system TLS certificates with NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 as an environment variable, or set experimental.turbopackUseSystemTlsCerts in your next.config.js file.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js
+    ./app/layout.tsx
+
+
+[00:00:18.159] Server  WARN     ⚠ [next]/internal/font/google/geist_a71539c9.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_a71539c9.module.css
+    [next]/internal/font/google/geist_a71539c9.js
+    ./app/layout.tsx
+
+
+[00:00:18.159] Server  WARN     ⚠ [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/geist_mono_8d43a2aa.module.css
+    [next]/internal/font/google/geist_mono_8d43a2aa.js
+    ./app/layout.tsx
+
+
+[00:00:18.159] Server  WARN     ⚠ [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+next/font: warning:
+Failed to download `JetBrains Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.module.css
+    [next]/internal/font/google/jetbrains_mono_7d65b77b.js
+    ./app/layout.tsx
+
+
+[00:00:18.165] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
