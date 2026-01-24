@@ -3,7 +3,9 @@ import RSVPForm from "./components/RSVPForm";
 import ContactSection from "./components/ContactSection";
 import { AuroraBackground } from "./components/ui/aurora-background";
 import { motion } from "motion/react";
-
+import { TextGenerateEffect } from "./components/ui/text-generate-effect";
+import InformationContent from "./components/InformationContent";
+ 
 export default function Home() {
   const scrollToRSVP = () => {
     const rsvpSection = document.getElementById('rsvp');
@@ -37,24 +39,11 @@ export default function Home() {
 
   return (
     <>
-      <AuroraBackground>
-        <motion.div
-          initial={{ opacity: 0.0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.3,
-            duration: 0.8,
-            ease: "easeInOut",
-          }}
-          className="relative flex flex-col gap-4 items-center justify-center px-4"
-        />
-        <div className="relative z-10 text-center space-y-8 px-4">
-          <h1 className="text-6xl md:text-8xl font-bold text-gray-900">
-            Sueun & Aref
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-600">
-            We're getting married!
-          </p>
+        <div className="relative z-10 text-center space-y-8 px-4 pt-16 min-h-screen flex flex-col items-center justify-center">
+            <TextGenerateEffect className="text-6xl md:text-8xl font-bold text-gray-900" duration={0.75}
+             words="Sueun & Aref" />
+            <TextGenerateEffect className="text-xl md:text-2xl text-gray-600" 
+            duration={1} words="We're getting married!" />
           <button
             onClick={scrollToRSVP}
             className="inline-block bg-gray-900 text-white py-4 px-8 rounded-lg font-semibold text-lg hover:bg-gray-800 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
@@ -62,8 +51,8 @@ export default function Home() {
             RSVP Now
           </button>
         </div>
-      </AuroraBackground>
       <RSVPForm />
+      <InformationContent></InformationContent>
       <ContactSection />
     </>
   );

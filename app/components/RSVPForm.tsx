@@ -101,8 +101,9 @@ export default function RSVPForm() {
   };
 
   return (
-    <div id="rsvp" className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-br from-zinc-50 to-zinc-100">
-      <div className="max-w-2xl w-full bg-white rounded-2xl shadow-xl p-8 md:p-12">
+    <div id="rsvp" className="w-2xl flex items-center">
+      <div className="relative inset-0 bg-gradient-to-br from-zinc-50 to-zinc-100 z-0"></div>
+      <div className="relative z-10 max-w-4xl w-full bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12 lg:p-16 border border-gray-200">
         <h2 className="text-4xl font-bold text-center mb-3 text-gray-900">RSVP</h2>
         <p className="text-center text-gray-600 mb-8">We'd love to have you join us!</p>
 
