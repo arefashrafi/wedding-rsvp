@@ -25,19 +25,19 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   };
 
   return (
-    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
+    <div className="w-full h-full p-2 md:p-6 grid grid-cols-1 md:grid-cols-3 grid-flow-dense max-w-7xl mx-auto gap-1 md:gap-2 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
             onClick={() => handleClick(card)}
             className={cn(
               card.className,
-              "relative overflow-hidden",
+              "relative overflow-hidden aspect-[4/3]",
               selected?.id === card.id
                 ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
                 : lastSelected?.id === card.id
-                ? "z-40 bg-white rounded-xl h-full w-full"
-                : "bg-white rounded-xl h-full w-full"
+                ? "z-40 bg-white rounded-xl"
+                : "bg-white rounded-xl"
             )}
             layoutId={`card-${card.id}`}
           >
@@ -66,9 +66,10 @@ const ImageComponent = ({ card }: { card: Card }) => {
       height="500"
       width="500"
       className={cn(
-        "object-cover object-top absolute inset-0 h-full w-full transition duration-200"
+        "object-cover object-center absolute inset-0 h-full w-full transition duration-200"
       )}
       alt="thumbnail"
+      loading="lazy"
     />
   );
 };
@@ -103,7 +104,7 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
           duration: 0.3,
           ease: "easeInOut",
         }}
-        className="relative px-8 pb-4 z-[70]"
+        className="relative px-4 md:px-8 pb-4 z-[70]"
       >
         {selected?.content}
       </motion.div>

@@ -84,30 +84,40 @@ export default function PhotosContent() {
       </div>
     );
   }
-  const cards = photos.map((photo, index) => ({
-    id: index + 1,
-    content: (
-      <div>
-        <p className="font-bold md:text-4xl text-xl text-white">
-          {photo.pathname.split('/').pop()?.split('.')[0] || `Photo ${index + 1}`}
-        </p>
-      </div>
-    ),
-    className: index % 3 === 0 ? "md:col-span-2" : "col-span-1",
-    thumbnail: photo.url,
-  }));
+  const cards = photos.map((photo, index) => {
+    // Create varied layouts with consistent aspect ratios
+    let className = "col-span-1";
+    if (index % 5 === 0) {
+      className = "col-span-1 md:col-span-2";
+    } else if (index % 3 === 0) {
+      className = "col-span-1 md:col-span-2";
+    }
+    
+    return {
+      id: index + 1,
+      content: (
+        <div>
+          <p className="font-bold text-lg md:text-2xl lg:text-4xl text-white">
+            {photo.pathname.split('/').pop()?.split('.')[0] || `Photo ${index + 1}`}
+          </p>
+        </div>
+      ),
+      className,
+      thumbnail: photo.url,
+    };
+  });
 
   return (
-    <div className="relative z-10 w-full min-h-screen py-20 px-4">
-      <div className="max-w-7xl mx-auto mb-12">
-        <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4 text-center">
+    <div className="relative z-10 w-full min-h-screen py-10 md:py-16 px-2 md:px-4">
+      <div className="max-w-7xl mx-auto mb-6 md:mb-10 px-2">
+        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-gray-900 mb-2 md:mb-4 text-center">
           Our Wedding Photos
         </h1>
-        <p className="text-xl text-gray-600 text-center max-w-2xl mx-auto">
+        <p className="text-base md:text-xl text-gray-600 text-center max-w-2xl mx-auto px-4">
           Relive the beautiful moments from our special day
         </p>
       </div>
-      <div className="h-screen">
+      <div className="min-h-[1000px] md:min-h-screen">
         <LayoutGrid cards={cards} />
       </div>
     </div>
