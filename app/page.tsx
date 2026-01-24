@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import RSVPForm from "./components/RSVPForm";
 import ContactSection from "./components/ContactSection";
 import { AuroraBackground } from "./components/ui/aurora-background";
@@ -7,6 +8,8 @@ import { TextGenerateEffect } from "./components/ui/text-generate-effect";
 import InformationContent from "./components/InformationContent";
  
 export default function Home() {
+  const [isVerified, setIsVerified] = useState(false);
+
   const scrollToRSVP = () => {
     const rsvpSection = document.getElementById('rsvp');
     if (rsvpSection) {
@@ -40,7 +43,7 @@ export default function Home() {
   return (
     <>
         <div className="relative z-10 text-center space-y-8 px-4 pt-16 min-h-screen flex flex-col items-center justify-center">
-            <TextGenerateEffect className="text-6xl md:text-8xl font-bold text-gray-900" duration={0.75}
+            <TextGenerateEffect className="text-6xl md:text-8xl font-bold text-gray-900 font-playfair italic" duration={0.75}
              words="Sueun & Aref" />
             <TextGenerateEffect className="text-xl md:text-2xl text-gray-600" 
             duration={1} words="We're getting married!" />
@@ -51,8 +54,8 @@ export default function Home() {
             RSVP Now
           </button>
         </div>
-      <RSVPForm />
-      <InformationContent></InformationContent>
+      <RSVPForm onVerified={() => setIsVerified(true)} />
+      {isVerified && <InformationContent />}
       <ContactSection />
     </>
   );

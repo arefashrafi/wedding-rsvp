@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import { AuroraBackground } from "./components/ui/aurora-background"; 
+import FlowerBackground from "./components/FlowerBackground"; 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,10 +34,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} antialiased`}
       >
+        <FlowerBackground />
         <Navbar />
-        <AuroraBackground>
-        {children}
-        </AuroraBackground>
+        <div className="relative" style={{ zIndex: 1 }}>
+          {children}
+        </div>
       </body>
     </html>
   );
