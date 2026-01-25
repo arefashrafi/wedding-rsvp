@@ -5,9 +5,10 @@ import { fetchRelatedGuests, submitRSVP, type Guest } from '../actions/guests'
 
 interface RSVPFormProps {
   onVerified?: () => void
+  onSubmitted?: () => void
 }
 
-export default function RSVPForm({ onVerified }: RSVPFormProps) {
+export default function RSVPForm({ onVerified, onSubmitted }: RSVPFormProps) {
   const [verificationName, setVerificationName] = useState('')
   const [isVerifying, setIsVerifying] = useState(false)
   const [isVerified, setIsVerified] = useState(false)
@@ -15,7 +16,6 @@ export default function RSVPForm({ onVerified }: RSVPFormProps) {
 
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
     attending: 'yes',
     dietaryRestrictions: '',
     message: ''
@@ -69,7 +69,6 @@ export default function RSVPForm({ onVerified }: RSVPFormProps) {
 
     try {
       const result = await submitRSVP({
-        email: formData.email,
         dietaryRestrictions: formData.dietaryRestrictions,
         message: formData.message,
         guests: relatedGuests,
@@ -79,6 +78,9 @@ export default function RSVPForm({ onVerified }: RSVPFormProps) {
       if (result.success) {
         setSubmitted(true)
         setTimeout(() => setSubmitted(false), 3000)
+        if (onSubmitted) {
+          setTimeout(() => onSubmitted(), 500)
+        }
       } else {
         setError(result.error || 'Failed to submit RSVP')
       }
@@ -176,22 +178,6 @@ export default function RSVPForm({ onVerified }: RSVPFormProps) {
             </div>
 
             <form onSubmit={handleSubmit} className='space-y-6'>
-              <div>
-                <label htmlFor='email' className='block text-sm font-medium text-gray-700 mb-2'>
-                  Email Address *
-                </label>
-                <input
-                  type='email'
-                  id='email'
-                  name='email'
-                  required
-                  value={formData.email}
-                  onChange={handleChange}
-                  className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-all'
-                  placeholder='john@example.com'
-                />
-              </div>
-
               {relatedGuests.length > 0 && (
                 <div className='bg-gray-50 rounded-lg p-6 border border-gray-200'>
                   <h3 className='text-lg font-semibold text-gray-900 mb-4'>Your Party</h3>

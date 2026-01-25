@@ -52,7 +52,6 @@ export async function fetchRelatedGuests(name: string): Promise<Guest[]> {
 }
 
 export interface RSVPSubmission {
-  email: string
   primary: Guest
   dietaryRestrictions: string
   message: string
@@ -65,15 +64,11 @@ export async function submitRSVP(data: RSVPSubmission): Promise<{ success: boole
 
     // Update each guest's attendance and shared information
     for (const guest of data.guests) {
-      if (guest.attending != true) {
-        continue
-      }
       if (data.primary.name == guest.name) {
         await sql`
             UPDATE guests_attendance 
             SET 
             attendance = ${guest.attending},
-            email = ${data.email},
             dietary_restrictions = ${data.dietaryRestrictions || null},
             message = ${data.message || null}
             WHERE name = ${guest.name}

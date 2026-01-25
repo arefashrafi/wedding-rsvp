@@ -14,11 +14,6 @@ const geistMono = Geist_Mono({
   subsets: ['latin']
 })
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: '--font-jetbrains-mono',
-  subsets: ['latin']
-})
-
 export const metadata: Metadata = {
   title: 'RSVP Sueun & Aref',
   description: 'RSVP for the wedding of Sueun & Aref'
@@ -31,7 +26,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} antialiased`}>
+      <head>
+        <link rel='stylesheet' href='https://use.typekit.net/vte7ahn.css' />
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{ backgroundColor: '#FCF8E7' }}
+      >
         <FlowerBackground />
         <Navbar />
         <div className='relative' style={{ zIndex: 1 }}>

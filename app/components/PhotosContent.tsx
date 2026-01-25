@@ -12,27 +12,14 @@ interface Photo {
 
 export default function PhotosContent() {
   const [photos, setPhotos] = useState<Photo[]>([])
-  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     async function fetchPhotos() {
       const fetchedPhotos = await getPhotos()
       setPhotos(fetchedPhotos)
-      setLoading(false)
     }
     fetchPhotos()
   }, [])
-
-  if (loading) {
-    return (
-      <div className='relative z-10 w-full h-screen flex items-center justify-center px-4'>
-        <div className='text-center'>
-          <div className='w-16 h-16 border-4 border-gray-300 border-t-gray-900 rounded-full animate-spin mx-auto mb-4'></div>
-          <p className='text-gray-600'>Loading photos...</p>
-        </div>
-      </div>
-    )
-  }
 
   if (photos.length === 0) {
     return (
