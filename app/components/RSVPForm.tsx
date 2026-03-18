@@ -26,6 +26,12 @@ export default function RSVPForm({ onVerified, onSubmitted }: RSVPFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [relatedGuests, setRelatedGuests] = useState<Guest[]>([])
 
+
+  const matchName = (guest_name: string, nameToVerify: string) => {
+    const names = guest_name.toLowerCase().split(' ')
+    return names.some((n) => n === nameToVerify.toLowerCase())
+  }
+
   const handleVerifyName = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsVerifying(true)
@@ -33,7 +39,7 @@ export default function RSVPForm({ onVerified, onSubmitted }: RSVPFormProps) {
 
     try {
       const guests = await fetchRelatedGuests(verificationName)
-      const matchingGuest = guests.find((g) => g.name.toLowerCase() === verificationName.toLowerCase())
+      const matchingGuest = guests.find((g) => matchName(g.name, verificationName))
 
       if (matchingGuest && guests.length > 0) {
         setIsVerified(true)
@@ -59,7 +65,7 @@ export default function RSVPForm({ onVerified, onSubmitted }: RSVPFormProps) {
     setError(null)
 
     // Find the primary guest based on the name entered
-    const primaryGuest = relatedGuests.find((guest) => guest.name.toLowerCase() === formData.name.toLowerCase())
+    const primaryGuest = relatedGuests.find((guest) => matchName(guest.name, formData.name))
 
     if (!primaryGuest) {
       setError('Could not find your invitation. Please check your name.')
@@ -124,7 +130,7 @@ export default function RSVPForm({ onVerified, onSubmitted }: RSVPFormProps) {
             <form onSubmit={handleVerifyName} className='space-y-6'>
               <div>
                 <label htmlFor='verificationName' className='block text-sm font-medium text-gray-700 mb-2'>
-                  Please enter your full name as it appears on your invitation *
+                  Please enter your name *
                 </label>
                 <input
                   type='text'
