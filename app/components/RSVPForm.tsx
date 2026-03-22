@@ -26,8 +26,10 @@ export default function RSVPForm({ onVerified, onSubmitted }: RSVPFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [relatedGuests, setRelatedGuests] = useState<Guest[]>([])
 
-
   const matchName = (guest_name: string, nameToVerify: string) => {
+    if (guest_name.toLowerCase() === nameToVerify.toLowerCase()) {
+      return true
+    }
     const names = guest_name.toLowerCase().split(' ')
     return names.some((n) => n === nameToVerify.toLowerCase())
   }
@@ -66,6 +68,7 @@ export default function RSVPForm({ onVerified, onSubmitted }: RSVPFormProps) {
 
     // Find the primary guest based on the name entered
     const primaryGuest = relatedGuests.find((guest) => matchName(guest.name, formData.name))
+    console.log('Primary Guest:', formData.name)
 
     if (!primaryGuest) {
       setError('Could not find your invitation. Please check your name.')
