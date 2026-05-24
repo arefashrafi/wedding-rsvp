@@ -68,7 +68,7 @@ export async function submitRSVP(data: RSVPSubmission): Promise<{ success: boole
         await sql`
             UPDATE guests_attendance 
             SET 
-            attendance = ${guest.attending},
+            attendance = ${guest.attending || false},
             dietary_restrictions = ${data.dietaryRestrictions || null},
             message = ${data.message || null}
             WHERE name = ${guest.name}
